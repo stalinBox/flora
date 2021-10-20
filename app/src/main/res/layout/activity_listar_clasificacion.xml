@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:paddingTop="50sp"
+        android:text="LISTA DE CLASIFICACIÒN DE LAS ESPECIES"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/lvlClasificacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:divider="@android:color/background_light"
+        android:dividerHeight="10px"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:paddingLeft="15sp" />
+</LinearLayout>

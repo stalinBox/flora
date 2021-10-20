@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+  >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="ELIMINAR ESPECIE"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNombreCientifico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="25px"
+        android:layout_marginEnd="50px"
+        android:layout_marginRight="50px"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Ingrese el nombre cientìfico de la Especie:"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEliminarEspecie"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:layout_marginEnd="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="ELIMINAR"
+        android:textSize="20sp" />
+
+</LinearLayout>

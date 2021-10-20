@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginEnd="15sp"
+    android:layout_marginRight="15sp"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="376dp"
+        android:layout_height="192dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="133dp"
+            android:layout_height="153dp" />
+
+        <TextView
+            android:id="@+id/nombre_cientifico"
+            android:layout_width="216dp"
+            android:layout_height="163dp"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_marginEnd="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:gravity="left"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

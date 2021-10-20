@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActualizarEspecie">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="414dp"
+            android:layout_height="392dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:shadowColor="#FFFFFF"
+                android:text="ACTUALIZAR FLORA"
+                android:textColor="#000"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginEnd="40sp"
+                android:layout_marginRight="40sp"
+                android:gravity="center_horizontal"
+                android:text="DIGITE PRIMERO EL NOMBRE CIENTÌFICO DE LA ESPECIE REGISTRADA Y LUEGO EL O LOS CAMPOS A MODIFICAR"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtNombreCientifico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Cientìfico:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtNombreComun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Comùn:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtEcosistema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ecosistema:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Clima:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtUso"
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Uso:"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="182dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="66dp"
+            android:layout_marginRight="0sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/btnActualizarFlora"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginEnd="100px"
+                android:layout_marginRight="100px"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@android:drawable/ic_popup_sync"
+                android:text="ACTUALIZAR FLORA"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="374dp"
+            android:layout_height="77dp"
+            android:layout_margin="5sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile">
+
+            <TextView
+                android:id="@+id/mensaje_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COORDENADAS" />
+
+            <TextView
+                android:id="@+id/mensaje_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="DIRECCION" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGallery"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="97dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Imagen"
+            android:text="IMAGEN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="91dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="GPS"
+            android:text="UBICACION"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

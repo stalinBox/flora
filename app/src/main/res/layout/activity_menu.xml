@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/laguna12">
+
+    <Button
+        android:id="@+id/btnRegistrarEspecie"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:onClick="irActivityRegistrarEspecie"
+        android:text="REGISTRAR ESPECIE"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnListarEspecies2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="?android:attr/actionModeFindDrawable"
+        android:onClick="irActivityListarEspecies"
+        android:text="LISTAR ESPECIES"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnListarClasificacion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:onClick="irActivityListarClasificacion"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="?android:attr/actionModeFindDrawable"
+        android:text="LISTAR CLASIFICACION DE ESPECIES"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_popup_sync"
+        android:onClick="irActivityActualizarEspecie"
+        android:text="ACTUALIZAR ESPECIE"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_popup_sync"
+        android:onClick="irActivityActualizarClasificacion"
+        android:text="ACTUALIZAR CLASIFICACIÒN"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEliminarEspecie"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="25px"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="irActivityEliminarEspecie"
+        android:text="ELIMINAR ESPECIE"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEliminarClasificacion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginEnd="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/boton_redondo"
+        android:onClick="irActivityEliminarClasificacionEspecie"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="ELIMINAR CLASIFICACIÒN ESPECIE"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="395dp"
+            android:layout_height="332dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0sp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingTop="35sp"
+                android:shadowColor="#FFFFFF"
+                android:text="REGISTRAR FLORA"
+                android:textColor="#000"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edtNombreCientifico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:ems="10"
+                android:hint="Nombre Cientìfico:"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/edtNombreComun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre Comùn:"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/edtEcosistema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Ecosistema:"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/edtClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Clima:"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/edtUso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Uso:"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="219dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnGallery"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="111dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="Imagen"
+            android:text="IMAGEN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="104dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/boton_redondo"
+            android:onClick="GPS"
+            android:text="UBICACIÒN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGallery" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="345dp"
+            android:layout_height="93dp"
+            android:layout_margin="5sp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile">
+
+            <TextView
+                android:id="@+id/mensaje_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COORDENADAS"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/mensaje_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="DIRECCIÒN"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="404dp"
+            android:layout_height="89dp"
+            android:layout_marginRight="0sp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo"
+                android:text="REGISTRAR FLORA" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginRight="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo"
+                android:onClick="ActivityClasificacion"
+                android:text="REGISTRAR SU CLASIFICACIÒN" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+

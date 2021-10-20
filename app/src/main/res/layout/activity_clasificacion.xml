@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".Clasificacion"
+    android:background="@drawable/fondo1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="5sp"
+                android:gravity="center"
+                android:padding="15sp"
+                android:text="REGISTRAR CLASIFICACIÒN"
+                android:textColor="#000"
+                android:textSize="24sp"
+
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edtCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Còdigo:"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/txtNombreCientifico"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Nombre Cientìfico:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtNombreComun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Comùn:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtReino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Reino:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtDivision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Divisiòn:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtClase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Clase:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtOrden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Orden:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Familia:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtGenero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Gènero:"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Especie:"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnRegistrarC"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginEnd="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/boton_redondo"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:gravity="center"
+                android:onClick="registrarClasificacion"
+                android:text="REGISTRAR" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
